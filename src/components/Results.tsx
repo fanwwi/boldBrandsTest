@@ -1,15 +1,13 @@
 import React from "react";
 import ResultBlock from "./ResultBlock";
 
-const Results = () => {
+const Results: React.FC = () => {
   return (
-    <div className="flex flex-col gap-[30px] my-[100px] mx-[80px]">
-      {/* Заголовок */}
+    <div className="flex flex-col gap-[30px] mx-[80px]">
       <span className="uppercase text-[24px] font-bold text-[#838895]">
         Измеримые результаты
       </span>
 
-      {/* Контейнер для ResultBlock */}
       <div className="flex flex-wrap gap-[30px]">
         <ResultBlock
           additionalText={"Рост выручки:"}

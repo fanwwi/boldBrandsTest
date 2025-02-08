@@ -2,7 +2,7 @@ import React from "react";
 import AboutText from "./AboutText";
 import WeDidImageBlock from "./WeDidImageBlock";
 
-const WeDidBlock = () => {
+const WeDidBlock: React.FC = () => {
   return (
     <div className="flex gap-[24px] items-start">
       <AboutText title={"Что мы сделали?"} />

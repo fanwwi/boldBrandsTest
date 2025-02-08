@@ -1,6 +1,16 @@
 import React from "react";
 
-const WeDidImageBlock = ({ imageUrl, title, listItems }) => {
+interface WeDidImageBlockProps {
+  imageUrl: string;
+  title: string;
+  listItems: string[];
+}
+
+const WeDidImageBlock: React.FC<WeDidImageBlockProps> = ({
+  imageUrl,
+  title,
+  listItems,
+}) => {
   return (
     <div className="flex flex-col items-start gap-[24px]">
       <img src={imageUrl} alt={title} className="w-[482px] h-[400px]" />

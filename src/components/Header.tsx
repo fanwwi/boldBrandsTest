@@ -1,6 +1,6 @@
 import React from "react";
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <header className="flex items-center justify-between w-full py-[56px] px-[24px] bg-white h-[97px]">
       <img src="img/logo.png" alt="Логотип" className="h-[31px] w-[231px]" />

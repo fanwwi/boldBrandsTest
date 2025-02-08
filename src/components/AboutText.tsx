@@ -1,6 +1,11 @@
 import React from "react";
 
-const AboutText = ({ title, content = "" }) => {
+interface AboutTextProps {
+  title: string;
+  content?: string;
+}
+
+const AboutText: React.FC<AboutTextProps> = ({ title, content = "" }) => {
   return (
     <div>
       <div className="flex text-gray-700 px-[100px] py-[80px]">

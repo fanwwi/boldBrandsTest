@@ -1,7 +1,11 @@
 import React from "react";
 import AdIcons from "./AdIcons";
 
-const MainBlockImage = ({ imageUrl }) => {
+interface MainBlockImageProps {
+  imageUrl: string;
+}
+
+const MainBlockImage: React.FC<MainBlockImageProps> = ({ imageUrl }) => {
   return (
     <div className="relative">
       <img src={imageUrl} alt="Изображение" className="w-[535px] h-[400px]" />

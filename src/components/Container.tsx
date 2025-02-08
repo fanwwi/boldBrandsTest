@@ -1,14 +1,14 @@
-import AboutText from "@/components/AboutText";
-import Header from "@/components/Header";
-import Line from "@/components/Line";
-import MainBlock from "@/components/MainBlock";
-import Results from "@/components/Results";
-import WeDidBlock from "@/components/WeDidBlock";
 import React from "react";
+import Header from "./Header";
+import MainBlock from "./MainBlock";
+import Line from "./Line";
+import AboutText from "./AboutText";
+import WeDidBlock from "./WeDidBlock";
+import Results from "./Results";
 
-const Home = () => {
+const Container: React.FC = () => {
   return (
-    <div>
+    <div className="flex flex-col gap-[80px]">
       <Header />
       <MainBlock />
       <Line />
@@ -33,4 +33,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Container;
